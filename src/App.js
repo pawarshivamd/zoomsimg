@@ -24,7 +24,7 @@ import car9 from "./img/9.jpg"
 
 
 function App() {
-  const [activeImage, setActiveImage] = useState('car1');
+  const [activeImage, setActiveImage] = useState(car1);
   return (
     <div className='container'>
       <div className="row">
