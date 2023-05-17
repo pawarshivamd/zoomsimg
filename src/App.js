@@ -39,19 +39,45 @@ function App() {
                 },
                 largeImage: {
                   src: activeImage,
-                  width: 1500,
-                  height: 1500,
+                  width: 1200,
+                  height: 1800,
                 },
               }}
             />
           </div>
           <div className="downsection">
             <Swiper
-              slidesPerView={5}
-              spaceBetween={20}
+              // slidesPerView={5}
+              // spaceBetween={20}
               navigation={true}
               pagination={{
                 clickable: true,
+              }}
+              breakpoints={{
+                420: {
+                  slidesPerView: 4,
+                },
+                640: {
+                  slidesPerView: 4,
+                },
+                768: {
+                  slidesPerView: 4,
+                },
+                813: {
+                  slidesPerView: 4,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+                1200: {
+                  slidesPerView: 5,
+                },
+                1366: {
+                  slidesPerView: 5,
+                },
+                1440: {
+                  slidesPerView: 5,
+                },
               }}
               modules={[Navigation]}
               className="mySwiper"
@@ -66,6 +92,55 @@ function App() {
               <SwiperSlide onClick={() => setActiveImage(car8)}><div className="img-box"><img src={car8} alt="" /></div> </SwiperSlide>
               <SwiperSlide onClick={() => setActiveImage(car9)}><div className="img-box"><img src={car9} alt="" /></div> </SwiperSlide>
             </Swiper>
+          </div>
+        </div>
+        <div className="col-lg-6">
+          <div class="xzoom_details">
+
+            <h4>MuscleBlaze Creatine Monohydrate, 400 g (0.88 lb) <span> <iconify-icon icon="mdi:lacto-vegetarian"
+              class="veg-nonveg-icon"></iconify-icon></span> </h4>
+
+
+            <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vero temporibus, accusamus
+              magnam maxime quis </h6>
+            <p class="star"><i class="fas fa-star"></i>4.5
+            </p>
+            <h3>₹1289 <span>MRP:<del class="ms-1">1489</del></span> </h3>
+            <div class=" btn-contain mb-2">
+              <p>Weight</p>
+              <div class="btn-body">
+                <p class="btn-views btn-views-1"><a href="/">5kg</a></p>
+                <p class="btn-views"><a href="/">10kg</a></p>
+              </div>
+            </div>
+            <div class=" btn-contain mb-2">
+              <p>Flavour</p>
+              <div class="btn-body">
+                <p class="btn-views btn-views-1"><a href="/">Chocolate</a></p>
+                <p class="btn-views"><a href="/">Vanila</a></p>
+                <p class="btn-views"><a href="/">Strawberry</a></p>
+              </div>
+            </div>
+            <div class=" btn-contain">
+              <p>Color</p>
+              <div class="btn-body">
+                <p class="btn-views  btn-views-1"><a href="/">Blue</a></p>
+                <p class="btn-views"><a href="/">Black</a></p>
+                <p class="btn-views"><a href="/">Red</a></p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mt-3">
+              <label for=""> Qty: </label>
+              <input type="number" value="1" class="form-control" />
+              <div class="btn-xzone-body ">
+                <a href="cart-page.html">
+                  <p class="btn-xzone"> <i class="bi bi-cart2"></i><span> Add To Cart
+                  </span></p>
+                </a>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
